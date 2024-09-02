@@ -1,0 +1,114 @@
+/* Fichier : back.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin: 20px 0;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #4cae4c;
+}
+
+.user-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.user-table th, .user-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #f4f4f4;
+    cursor: pointer;
+    position: relative;
+}
+
+.user-table th a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+.user-table th a.asc:after,
+.user-table th a.desc:after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+}
+
+.user-table th a.asc:after {
+    border-bottom-color: #333;
+}
+
+.user-table th a.desc:after {
+    border-top-color: #333;
+}
+
+.user-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.user-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.errors {
+    color: red;
+    background-color: #fdd;
+    padding: 10px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
